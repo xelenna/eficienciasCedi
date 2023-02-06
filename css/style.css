@@ -1,0 +1,399 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #d5e5f2;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    animation: banner 10s infinite linear alternate;
+    display: grid;
+    align-items: center;
+    background-color: #d5e5f2;
+    justify-content: space-between;
+    height: calc(100% - 50px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info a {
+
+    padding: 4%;
+    font-size: 110%;
+    background-color: #f0f1f2;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 186px;
+    font-weight: bold;
+}
+
+.info a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #fff;
+    height: 50px;
+}
+
+.menu-contenedor {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px 10px;
+    width: 180px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+}
+
+.menu-visible {
+    display: block;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    height: 100%;
+}
+
+.info a:nth-child(even) {
+    /*columnas derecha botones*/
+    margin-right: 70px;
+}
+
+.info a:nth-child(odd) {
+    /*columnas izquierda botones*/
+    margin-left: 70px;
+}
+
+.info a i {
+    /*color icono botones*/
+    color: #01BED9;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.info a:last-of-type {
+    margin-bottom: 0;
+}
+
+.menu a {
+    margin-bottom: 10px;
+}
+
+#btn-menu {
+    border-radius: 0, 5px;
+    cursor: pointer;
+}
+
+.lista {
+    align-content: center;
+
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-top: 20px;
+
+}
+
+a {
+    /*Items-Menú*/
+    text-decoration: none;
+    color: black;
+
+}
+
+.lista span {
+    margin-left: 15px;
+}
+
+nav.menu {
+    margin-top: 8px;
+    animation: bounce 0.5s;
+    margin-right: -9px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    30% {
+        transform: scale(1.0);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+}
+
+.texto {
+    text-align: center;
+    font-size: 35px;
+
+    letter-spacing: 0.2px;
+    line-height: 50px;
+}
+
+.container-bar {
+    margin: 30px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+.container-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 3px;
+    font-weight: bold;
+}
+
+.card-right {
+
+    margin-top: 3px;
+}
+
+#btn {
+    border: 1px solid #ddd;
+}
+
+.card-right p span {
+    font-weight: bold;
+}
+
+.container-deploy {
+    display: none;
+    margin-top: 10px;
+
+
+}
+
+.container-deploy-visible {
+    display: block;
+}
+
+#btn-deploy {
+    border-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+#myChart {
+    width: 40%;
+}
+
+/*Buscar Personas*/
+.form-control {
+    margin-left: 10%;
+}
+
+/*Boton-Buscar*/
+.btn-outline-success {
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    height: 25px;
+    color: #01BED9;
+    cursor: pointer;
+}
+
+.bg-body-tertiary {
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.update-direction {
+    background-color: #f0f1f2;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 80%;
+}
+
+.info-update {
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 65%;
+}
+
+/*Size grafico barras*/
+.container-barra {
+    max-width: 70%;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.info-update span {
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 80%;
+
+
+}
+
+.info-update i {
+    color: #01BED9;
+}
+
+#button-update {
+    font-size: 80%;
+    background-color: #f0f1f2;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button-update i {
+    color: #01BED9;
+}
+
+.info-index {
+    margin-top: 15%;
+}
+
+.info-index span {
+    margin-top: 25%;
+    margin-right: 15px;
+    font-size: 80%;
+}
+
+@media screen and (max-width:900px) {
+    .texto {
+        display: none;
+    }
+}
+
+
+
+
+/*Responsive pantallas pequeñas*/
+@media screen and (max-width:800px) {
+    body html {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    /* estilos para pantallas de televisión */
+}
+
+
+.indicador-pag {
+    font-weight: 700;
+    font-size: 110%;
+    display: none;
+    margin-right: 30px;
+}
+
+.indicador-pag i {
+    color: #01BED9;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 768PX) {
+    .indicador-pag {
+        display: flex;
+    }
+}
+
+.indicador-pag span {
+    white-space: nowrap;
+    /*frase no haga salto de línea*/
+}
+
+.lista-empleados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#progressBar {
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+    line-height: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container-dady {
+    border: #d0d0d0 1px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 60, 0, 0.116);
+}
+
+.container-circle {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cedi {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container-cedi span {
+    font-size: 22px;
+}
+
+.container-area {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

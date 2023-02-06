@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>EFICIENCIA CEDI</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/"><img src="/imgs/logo-cedi-black.svg" alt="imagen_logo" class="logo"></a> <!--lleva pag principal-->
+
+         <!--Indicador de página-->
+
+         <div class="indicador-pag">
+            <i class="fa-solid fa-location-dot" class="sizes"></i>
+            <span>Eficiencia Área</span>
+            </a>
+        </div>
+
+        <!--Menú Hamburguesa-->
+        <div class="menu-contenedor">
+            <button id="btn-menu"><img src="/imgs/menu_black_24dp.svg" alt="imagen_menu"></button>
+            <nav class="menu">
+                <ul class="lista">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+                    <li><a href="./E_Amigable.html"><i class="fa-solid fa-shirt"></i><span>Entrega Amigable</span></li></a>
+                    <li><a href="./Preimpresion.html"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Preimpresión</span></li></a>
+                    <li><a href="./Islas.html"><i class="fa-solid fa-boxes-packing"></i><span>Islas</span></li></a>
+                    <li><a href="./Muleros.html"><i class="fa-solid fa-truck-ramp-box"></i><span>Muleros</span></li></a>
+                    <li><a href="./E_Area.html"><i class="fa-solid fa-hourglass-start"></i><span>Eficiencia-Área</span></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Info-Actualizar-->
+    <div class="info-update">
+        <span>Última fecha de actualización: 23/01/23 - 10:00AM</span>
+        <button class="update-direction">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Actualizar</span>
+        </button>
+    </div>
+
+    <!--Gráfica Barras-->
+    
+        <!--Contenedor Eficiencia CEDI-->
+        <div class="container-area">
+        <div class="container-cedi">
+            <span>Preimpresión</span>
+            <div id="container" class="container-bar">
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.0/progressbar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="/js/menu.js"></script>
+
+<script src="/js/progress.js"></script>
+<script src="/js/bar.js"></script>
+</html>
