@@ -1,0 +1,50 @@
+#progressBar {
+    color: white;
+    line-height: 20px;
+    border-radius: 20px;
+    -webkit-text-stroke: 0.3px ;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*Progress Circle*/
+.container-cedi {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    width: 30%;
+}
+
+.container-cedi span {
+    font-size: 20px;
+}
+
+.container-area {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-bar {
+    margin: 30px;
+    width: 130px;
+    height: 130px;
+    position: relative;
+}
+
+
+  

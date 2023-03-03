@@ -1,13 +1,8 @@
-
-// Menú
-document.getElementById('btn-menu').addEventListener('click', function(){
-    const menu = document.querySelector('.menu');
-    if(menu.classList.contains('menu-visible')){
-        menu.classList.remove('menu-visible');
-    }else{
-        menu.classList.add('menu-visible');
-    }
-});
+//Menú hamburguesa
 
 
+document.getElementById("icon-menu").addEventListener("click", mostrar_menu);
 
+function mostrar_menu() {
+    document.getElementById("show-menu").classList.toggle('show-lateral');
+}

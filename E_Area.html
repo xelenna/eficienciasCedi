@@ -11,64 +11,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/SpinKit.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>EFICIENCIA CEDI</title>
 </head>
 
-<body>
+<body onload="onload()">
     <header class="header">
         <a href="/"><img src="/imgs/logo-cedi-black.svg" alt="imagen_logo" class="logo"></a> <!--lleva pag principal-->
 
-         <!--Indicador de página-->
+        <!--Indicador de página-->
 
-         <div class="indicador-pag">
+        <div class="indicador-pag">
             <i class="fa-solid fa-location-dot" class="sizes"></i>
             <span>Eficiencia Área</span>
             </a>
         </div>
 
+
         <!--Menú Hamburguesa-->
-        <div class="menu-contenedor">
-            <button id="btn-menu"><img src="/imgs/menu_black_24dp.svg" alt="imagen_menu"></button>
-            <nav class="menu">
-                <ul class="lista">
-                    <li><a href="./index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
-                    <li><a href="./E_Amigable.html"><i class="fa-solid fa-shirt"></i><span>Entrega Amigable</span></li></a>
-                    <li><a href="./Preimpresion.html"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Preimpresión</span></li></a>
-                    <li><a href="./Islas.html"><i class="fa-solid fa-boxes-packing"></i><span>Islas</span></li></a>
-                    <li><a href="./Muleros.html"><i class="fa-solid fa-truck-ramp-box"></i><span>Muleros</span></li></a>
-                    <li><a href="./E_Area.html"><i class="fa-solid fa-hourglass-start"></i><span>Eficiencia-Área</span></li></a>
+        <div class="menu" id="show-menu"> <!-- nav>ul>li*4>a -->
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>
+                            <span>Inicio</span></a></li>
+                    <li><a href="./E_Amigable.html"><i class="fa-solid fa-shirt"></i>
+                            <span>Entrega Amigable</span></li></a>
+                    <li><a href="./Preimpresion.html"><i class="fa-solid fa-circle-dollar-to-slot"></i>
+                            <span>Preimpresión</span></li></a>
+                    <li><a href="./Islas.html"><i class="fa-solid fa-boxes-packing"></i>
+                            <span>Islas</span></li></a>
+                    <li><a href="./Muleros.html"><i class="fa-solid fa-truck-ramp-box"></i>
+                            <span>Muleros</span></li></a>
+                    <li><a href="./E_Area.html"><i class="fa-solid fa-hourglass-start"></i>
+                            <span>Eficiencia-Área</span></li></a>
+                    <li><a href="./Ficha-turno.html"><i class="fa-solid fa-user"></i>
+                            <span>Ficha-Turno</span></li></a>
                 </ul>
             </nav>
         </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
     </header>
 
-    <!--Info-Actualizar-->
-    <div class="info-update">
-        <span>Última fecha de actualización: 23/01/23 - 10:00AM</span>
-        <button class="update-direction">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span>Actualizar</span>
-        </button>
-    </div>
+    <main class="estatico container-main">
+        <!--Info-Actualizar-->
 
-    <!--Gráfica Barras-->
-    
+        <div class="info-update">
+            <span>Última fecha de actualización: 23/01/23 - 10:00AM</span>
+            <button class="update-direction">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Actualizar</span>
+            </button>
+        </div>
+
+        <!--SpinKit-Cargar-Información-->
+        <div class="container-spinkit">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+
         <!--Contenedor Eficiencia CEDI-->
         <div class="container-area">
-        <div class="container-cedi">
-            <span>Preimpresión</span>
-            <div id="container" class="container-bar">
+            <div class="container-cedi">
+                <span>Preimpresión</span>
+                <div id="container" class="container-bar">
+                </div>
             </div>
         </div>
     </main>
-</div>
+    </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.0/progressbar.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script src="/js/menu.js"></script>
+<script src="/js/ProgressCircle.js"></script>
 
-<script src="/js/progress.js"></script>
-<script src="/js/bar.js"></script>
 </html>

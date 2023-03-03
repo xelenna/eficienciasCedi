@@ -1,0 +1,89 @@
+.container-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom: 1px;
+}
+
+.card-right {
+    margin-top: 3px;
+}
+
+.card-right p span {
+    font-weight: bold;
+}
+
+.container-deploy {
+    display: none;
+    margin-top: 10px;
+}
+
+.container-deploy-visible {
+    display: block;
+}
+
+#btn-deploy {
+    border-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+#btn {
+    border: 1px solid #ddd;
+}
+
+.container-dady {
+    border: #d0d0d0 1px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #babec56f;
+}
+
+
+/*Tarjetas se alinean en columnas  */
+.lista-empleados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container-card-circle{
+    width: 250px;
+    height: 140px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-ficha {
+    width: 360px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom: 1px;
+}

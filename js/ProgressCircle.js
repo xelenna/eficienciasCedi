@@ -1,4 +1,3 @@
-
 var bar = new ProgressBar.Circle("#container", {
     color: 'black',
     strokeWidth: 16,
@@ -29,3 +28,8 @@ var bar = new ProgressBar.Circle("#container", {
   
   bar.animate(0.7);  
 
+
+
+
+
+  
